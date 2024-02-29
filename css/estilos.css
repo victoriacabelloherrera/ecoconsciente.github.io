@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: black !important;   
+}
+
+body {
+    padding-top: 56px;
+}
+
+/* NAV */
+.navbar {
+    background-color: #e3d5ca; 
+}
+
+/* LOGOTIPO */
+.navbar-brand {
+    color: #606c38 !important;
+    font-weight: bold;
+}
+
+
+.navbar-brand:hover {
+    color: #a7c957; 
+}
+
+/* NAV*/
+.navbar-nav a {
+    color: black; /* Cambiado a negro */
+}
+
+.navbar-nav a:hover {
+    color: #3a5a40 !important;
+}
+
+/* color del texto dentro del desplegable */
+.dropdown-menu a {
+    color: black;
+}
+
+/* color de fondo al hacer clic en el desplegable */
+.dropdown-menu a:hover {
+    background-color: #a7c957; /* Verde manzana */
+}
+
+/* PORTADA ENCABEZADO */
+.portada-container {
+    background: linear-gradient(to right, #e3d5ca, #a3b18a); /* degradado de izquierda(rosa) a derecha(verde) */
+    color: black; 
+    padding: 80px 0; 
+    position: relative;
+}
+
+.portada-imagen {
+    position: absolute;
+    top: 0;
+    right: 0; /* imagen a la derecha */
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* asegura que la imagen esté en la capa superior */
+}
+
+.portada-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* la portada cubre todo el contenedor y no se sale */
+}
+
+.portada-texto {
+    position: relative; /*apilamiento para los elementos hijos */
+    z-index: 2; /* texto en capa superior */
+    padding: 20px; 
+}
+
+ /* PORTADA RESPONSIVE */
+@media (max-width: 767px) {
+    .portada-imagen {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.negrita {
+    font-weight: bold;
+    color: black;
+}
+
+/* paginas introductorias */
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #e3d5ca;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #e3d5ca;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 0 #e3d5ca;
+}
+
+.btn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #e3d5ca;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #e3d5ca, rgba(0, 0, 0, 0));
+}
+
+.titulos {
+    font-size: 25px;
+}
+
+/* boton de scroll*/
+#scroll {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ffc0cb;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#scroll:hover {
+  background-color: #ff69b4;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* estilos para el banner de las paginas introductorias*/
+.intro-banner1 {
+
+    background-image: url('../introduccion-pag/img-paginas-intro/banner-cambio-climatico.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 70px;
+    border-bottom: 1px solid #dee2e6;
+    
+}
+
+.intro-banner1 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-banner1 p {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .intro-banner1 {
+        padding: 60px 20px;
+    }
+
+    .intro-banner1 h1 {
+        font-size: 2rem;
+    }
+
+    .intro-banner1 p {
+        font-size: 1rem;
+    }
+}
+
+.intro-banner2 {
+    background-image: url('../introduccion-pag/img-paginas-intro/banner-calentamiento-global.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 70px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.intro-banner2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-banner2 p {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.intro-banner3 {
+    background-image: url('../introduccion-pag/img-paginas-intro/banner-efecto-invernadero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 70px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.intro-banner3 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-banner3 p {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+/* banner responsive */
+@media (max-width: 767px) {
+    .intro-banner1,
+    .intro-banner2
+    .intro-banner3 {
+        padding: 40px 20px; /* Ajusta el espaciado interno para dispositivos móviles */
+    }
+
+    .intro-banner1 h1,
+    .intro-banner2 h1 
+    .intro-banner3 h1 {
+        font-size: 1.8rem; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    }
+
+    .intro-banner1 p,
+    .intro-banner2 p
+    .intro-banner3 p {
+        font-size: 1rem; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    }
+}
+
+
+
+.img-fluid {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.img-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col-md-8 {
+    margin-bottom: 20px; /* Agregado un margen inferior al contenedor del texto */
+}
+
+.banner-general {
+            background-color: #f5f5dc; /* color beige */
+            padding: 40px 20px; 
+            text-align: center;
+            color: #000; 
+        }
+
+        .banner-general h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .banner-general p {
+            font-size: 1.25rem;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 767px) {
+            .banner-general {
+                padding: 20px 10px; 
+            }
+
+            .banner-general h1 {
+                font-size: 2rem; 
+            }
+
+            .banner-general p {
+                font-size: 1rem; 
+            }
+        }
+
+/* ASIDE */
+.aside-container {
+            display: flex;
+        }
+
+        aside {
+            background-color: #caf0f8; /* celeste */
+            padding: 20px;
+            margin-top: 20px;
+            max-height: 500px; 
+        }
+
+.green-letter {
+    color: seagreen !important;
+}
+
+aside a {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 15px;
+}
+
+@media (max-width: 767px) {
+    .aside-container {
+        flex-direction: column; 
+    }
+
+    aside {
+        margin-top: 0; 
+        max-width: 100%; 
+    }
+
+    .img-container {
+        margin-top: 10px; 
+    }
+}
+
+
+.container-g {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gallery img {
+    width: 100%;
+     margin-bottom: 20px;
+}
+
+.custom-width {
+            max-width: 1000px; /* Ajusta el valor según tus necesidades */
+            margin: 0 auto; /* Centra la columna */
+        }
+
+
+.desarrollador {
+    max-width: 300px;
+}
+
+        
+.carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(100%);
+    }
+
+footer {
+    background-color: #e3d5ca;
+    padding: 50px 0; /* Agrega padding superior e inferior de 50px */
+    color: #333; /* Cambia el color del texto */
+}
+
+.footer-about,
+.footer-contact,
+.footer-links {
+    margin-bottom: 30px; /* Agrega espacio entre las secciones del footer */
+}
+
+
+
+.footer-social a {
+    display: inline-block;
+    width: 50px; /* Ajusta el tamaño del círculo */
+    height: 50px; /* Ajusta el tamaño del círculo */
+    line-height: 50px; /* Centra el ícono verticalmente */
+    border-radius: 50%; /* Convierte el contenedor en un círculo */
+    text-align: center;
+    font-size: 24px; /* Ajusta el tamaño del ícono */
+    color: #333; /* Color de los íconos */
+    background-color:  #a3b18a; /* Fondo transparente por defecto */
+    transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+    margin-right: 10px; /* Agrega espacio entre los íconos */
+}
+
+.footer-social a:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo al pasar el cursor */
+}
+
+
+

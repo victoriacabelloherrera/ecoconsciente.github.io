@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ECO-CONSCIENTE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="vidaSostenibleDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vida Sostenible</a>
+                        <div class="dropdown-menu" aria-labelledby="vidaSostenibleDropdown">
+                            <a class="dropdown-item" href="../vida-sostenible/index.html">Consejos de vida sostenible</a>
+                            <a class="dropdown-item" href="../vida-sostenible/casa-ecologica.html">Casa Ecológica</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="modaProductosDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Moda y Productos</a>
+                        <div class="dropdown-menu" aria-labelledby="modaProductosDropdown">
+                            <a class="dropdown-item" href="../moda-y-productos/index.html">Vestimenta Ecofriendly</a>
+                            <a class="dropdown-item" href="../moda-y-productos/productos-de-cosmetica.html">Productos de Cosmética</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="otrosDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Más</a>
+                        <div class="dropdown-menu" aria-labelledby="otrosDropdown">
+                            <a class="dropdown-item" href="juego.html">Juego Interactivo</a>
+                            <a class="dropdown-item" href="index.html">Contacto</a>
+                            <a class="dropdown-item" href="desarrollador.html">Desarrollador</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <!-- Formulario de contacto -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2 class="text-center mb-4">¿Quieres saber qué puedes hacer por el planeta?</h2>
+                <p class="text-center mb-4">Suscríbete en un solo paso para recibir noticias, ebooks, invitaciones a eventos virtuales y consejos sobre cómo cuidar el medio ambiente, directo en tu correo electrónico.</p>
+                <form id="contactForm" class="needs-validation" novalidate action="../enviar_mail.php" method="POST">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label"></label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required maxlength="40"
+                            placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label"></label>
+                        <input type="email" class="form-control" id="email" name="email" required maxlength="40"
+                            placeholder="Ingrese su correo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label"></label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required maxlength="250"
+                            placeholder="Escriba un mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitButton">Enviar Mensaje</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+<br>
+
+<!-- Footer -->
+<footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 footer-about wow fadeInUp">
+                        <h3>Sobre nosotros</h3>
+                            <p>
+                                Eco-consciente es un sitio web que te invita a tener una vida más ecológica, ofreciendo consejos y recursos para un estilo de vida sostenible.
+                            </p>
+                            
+                        </div>
+                        <div class="col-md-4 offset-md-1 footer-contact wow fadeInDown">
+                            <h3>Contacto</h3>
+                            <p><i class="fas fa-map-marker-alt"></i>  Avenida del Sol 1234, CABA, Buenos Aires, Argentina</p>
+                            <p><i class="fas fa-phone"></i> Phone: (0039) 333 12 68 347</p>
+                            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@eco-consciente.com.ar">info@eco-consciente.com.ar</a></p>
+                            
+                        </div>
+                        <div class="col-md-4 footer-links wow fadeInUp">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Links principales</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><a class="scroll-link" href="../index.html">Home</a></p>
+                                    <p><a href="../vida-sostenible/index.html">Consejos de vida sostenible</a></p>
+                                    <p><a href="../vida-sostenible/casa-ecologica.html">Casa ecológica</a></p>
+                                    <p><a href="../moda-y-productos/index.html">Vestimenta ecofriendly</a></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><a href="../moda-y-productos/productos-de-cosmetica.html">Producos de cósmetica</a></p>
+                                    <p><a href="index.html">Contacto</a></p>
+                                    <p><a href="desarrollador.html">Desarrollador</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                            <a href="#"><i class="fab fa-twitter"></i></a> 
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a> 
+                            <a href="#"><i class="fab fa-instagram"></i></a> 
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    <!-- Bootstrap JS y dependencias (jQuery y Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- jQuery Validate plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<!-- JavaScript -->
+<script src="../js/contacto.js"></script>
+</body>
+</html>
