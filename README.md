@@ -1,6 +1,9 @@
 # Proyecto Final: Sitio Web Responsive
 Realizado en 2024
 
+### Link al sitio
+
+
 ### Descripción del Proyecto
 Este trabajo final tiene como objetivo desarrollar un sitio web completamente responsive que cumpla con los siguientes requisitos:
 
@@ -9,6 +12,6 @@ Este trabajo final tiene como objetivo desarrollar un sitio web completamente re
 - Uso de **Bootstrap** para agilizar el desarrollo y garantizar un diseño adaptable a diferentes dispositivos.
 
 ### Características Principales
-- Diseño completamente responsive para una experiencia óptima en dispositivos móviles, tabletas y ordenadores.
+- Diseño completamente responsive para una experiencia óptima en dispositivos móviles y ordenadores.
 - Navegación fluida y estructura clara que permite a los usuarios interactuar fácilmente con el contenido.
 
