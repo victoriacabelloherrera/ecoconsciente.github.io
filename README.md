@@ -1,8 +1,6 @@
 # Proyecto Final: Sitio Web Responsive
 Realizado en 2024
-
-### Link al sitio
-
+[Visita el sitio web aquí](https://victoriacabelloherrera.github.io/ecoconsciente.github.io/)
 
 ### Descripción del Proyecto
 Este trabajo final tiene como objetivo desarrollar un sitio web completamente responsive que cumpla con los siguientes requisitos:
